@@ -1,0 +1,91 @@
+/* 
+ * 只需要给自己设定的页面写样式即可 
+ *   已经设定好的PAGE?样式
+ *     每一个页面都是一屏幕
+ *     都设置了position:relative，这样每一页的子元素都相当于当前页面定位
+ *     溢出的内容都隐藏了
+ *     ......
+ */
+/* ==PAGE1== */
+.page1 {
+    background: url('image/p1_2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.page1 img {
+    position: absolute;
+}
+
+.page1 img:nth-of-type(1) {
+    /* 所有测量出来的尺寸都要除以100变为REM */
+    width: 1.12rem;
+    height: 3.72rem;
+    left: 2.3rem;
+    top: .5rem;
+}
+
+.page1 img:nth-of-type(2) {
+    width: 6.44rem;
+    height: 6rem;
+    left: .4rem;
+    bottom: 1.6rem;
+}
+
+.page1 img:nth-of-type(3) {
+    width: 4.34rem;
+    height: 7.14rem;
+    right: 0;
+    top: .4rem;
+}
+
+.page1 img:nth-of-type(4) {
+    width: 8rem;
+    height: 6.9rem;
+    left: -1.5rem;
+    bottom: .7rem;
+}
+
+.page1 img:nth-of-type(5) {
+    width: 1.28rem;
+    height: 1.2rem;
+    right: 1.5rem;
+    bottom: 3.12rem;
+}
+
+/* ==PAGE2== */
+.page2 {
+    background: url('image/p2_3.jpg') no-repeat;
+    background-size: cover;
+}
+
+.page2 img {
+    position: absolute;
+}
+
+.page2 img:nth-of-type(1) {
+    width: 4rem;
+    height: 2rem;
+    left: 0;
+    top: .1rem;
+}
+
+.page2 img:nth-of-type(2) {
+    width: .72rem;
+    height: 7.48rem;
+    right: 1.2rem;
+    top: 2.8rem;
+}
+
+.page2 img:nth-of-type(3) {
+    width: .72rem;
+    height: 7.48rem;
+    right: 3rem;
+    top: 2.8rem;
+}
+
+.page2 img:nth-of-type(4) {
+    width: .72rem;
+    height: 7.48rem;
+    right: 4.8rem;
+    top: 2.8rem;
+}
